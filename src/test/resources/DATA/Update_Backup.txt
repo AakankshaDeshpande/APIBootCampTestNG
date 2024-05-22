@@ -1,0 +1,204 @@
+ {
+      "scenario_name": "Empty First Name 1",
+      "user_first_name": "",
+      "user_last_name": "Doe",
+      "user_contact_number": 6622449955,
+      "user_email_id": "john.doe@example.com",
+      "userAddress": {
+        "plotNumber": "308-A",
+        "street": "MainSt",
+        "state": "CA",
+        "country": "USA",
+        "zipCode": 12345
+      },
+      "expectedStatus": 400
+    },
+    {
+      "scenario_name": "Empty Last Name 2",
+      "user_first_name": "John",
+      "user_last_name": "",
+      "user_contact_number": 6622449955,
+      "user_email_id": "john.doe@example.com",
+      "userAddress": {
+        "plotNumber": "308-A",
+        "street": "MainSt",
+        "state": "CA",
+        "country": "USA",
+        "zipCode": 12345
+      },
+      "expectedStatus": 400
+    },
+    {
+      "scenario_name": "Empty Contact Number 3",
+      "user_first_name": "John",
+      "user_last_name": "Doe",
+      "user_contact_number": "",
+      "user_email_id": "john.doe@example.com",
+      "userAddress": {
+        "plotNumber": "308-A",
+        "street": "MainSt",
+        "state": "CA",
+        "country": "USA",
+        "zipCode": 12345
+      },
+      "expectedStatus": 400
+    },
+    {
+      "scenario_name": "Invalid Email ID 4",
+      "user_first_name": "John",
+      "user_last_name": "Doe",
+      "user_contact_number": 6622449955,
+      "user_email_id": "",
+      "userAddress": {
+        "plotNumber": "308-A",
+        "street": "MainSt",
+        "state": "CA",
+        "country": "USA",
+        "zipCode": 12345
+      },
+      "expectedStatus": 400
+    },
+ 
+    {
+      "scenario_name": "Empty plot field 5",
+      "user_first_name": "John",
+      "user_last_name": "Doe",
+      "user_contact_number": 6622449955,
+      "user_email_id": "invalid@gmail.email",
+      "userAddress": {
+        "plotNumber": "",
+        "street": "MainSt",
+        "state": "CA",
+        "country": "USA",
+        "zipCode": 12345
+      },
+      "expectedStatus": 400
+    },
+
+    {
+      "scenario_name": "invalid plot field 6",
+      "user_first_name": "John",
+      "user_last_name": "Doe",
+      "user_contact_number": 6622449955,
+      "user_email_id": "invalid@gmail.email",
+      "userAddress": {
+       "plotNumber": "1234",
+       "street": "MainSt",
+       "state": "CA",
+       "country": "USA",
+       "zipCode": 12345
+      },
+      "expectedStatus": 400
+    },
+
+    {
+      "scenario_name": "Empty street field 7",
+      "user_first_name": "John",
+      "user_last_name": "Doe",
+      "user_contact_number": 6622449955,
+      "user_email_id": "invalid@gmail.email",
+      "userAddress": {
+       "plotNumber": "308-A",
+       "street": "",
+       "state": "CA",
+       "country": "USA",
+       "zipCode": 12345
+      },
+      "expectedStatus": 400
+    },
+
+    {
+      "scenario_name": "invalid street field 8",
+      "user_first_name": "John",
+      "user_last_name": "Doe",
+      "user_contact_number": 6622449955,
+      "user_email_id": "invalid@gmail.email",
+      "userAddress": {
+       "plotNumber": "308-A",
+       "street": "123A",
+       "state": "CA",
+       "country": "USA",
+       "zipCode": 12345
+      },
+      "expectedStatus": 400
+    },
+
+
+    {
+      "scenario_name": "Empty state field 9",
+      "user_first_name": "John",
+      "user_last_name": "Doe",
+      "user_contact_number": 6622449955,
+      "user_email_id": "invalid@gmail.email",
+      "userAddress": {
+       "plotNumber": "308-A",
+       "street": "123A",
+       "state": "",
+       "country": "USA",
+       "zipCode": 12345
+      },
+      "expectedStatus": 400
+    },
+    {
+      "scenario_name": "invalid state field 10",
+      "user_first_name": "John",
+      "user_last_name": "Doe",
+      "user_contact_number": 6622449955,
+      "user_email_id": "invalid@gmail.email",
+      "userAddress": {
+       "plotNumber": "308-A",
+       "street": "lapalce",
+       "state": "1234",
+       "country": "USA",
+       "zipCode": 12345
+      },
+      "expectedStatus": 400
+    },
+
+    {
+      "scenario_name": "Empty country field 11",
+      "user_first_name": "John",
+      "user_last_name": "Doe",
+      "user_contact_number": 6622449955,
+      "user_email_id": "invalid@gmail.email",
+      "userAddress": {
+       "plotNumber": "308-A",
+       "street": "lapalce",
+       "state": "1234",
+       "country": "",
+       "zipCode": 12345
+      },
+      "expectedStatus": 400
+    },
+
+    {
+      "scenario_name": "invalid country field  12",
+      "user_first_name": "John",
+      "user_last_name": "Doe",
+      "user_contact_number": 6622449955,
+      "user_email_id": "invalid@gmail.email",
+      "userAddress": {
+       "plotNumber": "308-A",
+       "street": "lapalce",
+       "state": "1234",
+       "country": "1234",
+       "zipCode": 12345
+      },
+      "expectedStatus": 400
+    },
+
+    {
+      "scenario_name": "invalid zipcode field  13",
+      "user_first_name": "John",
+      "user_last_name": "Doe",
+      "user_contact_number": 6622449955,
+      "user_email_id": "invalid@gmail.email",
+      "userAddress": {
+       "plotNumber": "308-A",
+       "street": "lapalce",
+       "state": "1234",
+       "country": "USA",
+       "zipCode": "AAAAA"
+      },
+      "expectedStatus": 400
+    },

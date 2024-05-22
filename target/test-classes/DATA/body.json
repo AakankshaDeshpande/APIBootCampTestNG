@@ -1,0 +1,13 @@
+{
+    "user_first_name":"RAVEN",
+    "user_last_name":"RAVEN",
+    "user_contact_number":9060807766,
+    "user_email_id":"raven1@gmail.com",
+    "userAddress":{
+    "plotNumber":"307-B",
+    "street":"laplace",
+    "state":"PA",
+    "country":"USA",
+    "zipCode":12345
+    }
+   }

@@ -1,0 +1,29 @@
+{
+    "scenarios": [
+      {
+        "scenario_name": "Empty First Name",
+        "user_first_name": "",
+        
+       
+        "expectedStatus": 400
+      },
+      {
+        "scenario_name": "Empty Last Name",
+        
+        "user_last_name": "",
+       
+      
+        "expectedStatus": 400
+      },
+      {
+        "scenario_name": "Empty Contact Number",
+        
+        "user_contact_number": "",
+        
+       
+        "expectedStatus": 400
+      }
+      
+     
+    ]
+  }
